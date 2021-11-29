@@ -99,7 +99,7 @@ def parbaude(): #pārbauda vai ievadītās koordinātas sakrīt ar kāda mērķa
         print(f"Minējums x = {minejums_x} y = {minejums_y} ir nepareizs")
         time.sleep(0.5)
 
-def programmas_darbiba(): #izpilda visas funkcijas pareizā secībā
+def main_darbiba(): #izpilda visas funkcijas pareizā secībā
     while True:
         global minejumu_skaits
         global punkti
@@ -170,4 +170,4 @@ def programmas_darbiba(): #izpilda visas funkcijas pareizā secībā
                 print("Ievadītā vērtība nav skaitlis, mēģiniet vēlreiz")
                 time.sleep(0.5)
 
-programmas_darbiba()
+main_darbiba()
