@@ -1,3 +1,5 @@
+import time
+
 def limena_izvele(): #pieprasa lietotājam grūtības līmeni
     global grutibas_limenis
     while True:
