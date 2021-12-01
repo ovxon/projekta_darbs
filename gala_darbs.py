@@ -14,7 +14,11 @@ punkti = 0
 vards = 0
 izvele = 0
 mape = "faili/"
+x = 0
+y = 0
 
 import limena_izveles_modulis as lvm
 
 lvm.limena_izvele()
+
+print(x)
