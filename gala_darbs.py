@@ -17,4 +17,4 @@ mape = "faili/"
 
 import limena_izveles_modulis as lvm
 
-lvm.limena_izvele
+lvm.limena_izvele()
