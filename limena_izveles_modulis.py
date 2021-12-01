@@ -15,3 +15,6 @@ def limena_izvele(): #pieprasa lietotājam grūtības līmeni
         except ValueError:
             print("Ievadītā vērtība nav skaitlis, mēģiniet vēlreiz")
             time.sleep(0.5)
+
+    global x, y
+    x, y = grutibas_limenis + 2, grutibas_limenis + 2
