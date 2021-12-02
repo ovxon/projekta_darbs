@@ -1,7 +1,7 @@
 import time
 
 def limena_izvele(): #pieprasa lietotājam grūtības līmeni
-    global grutibas_limenis
+    global grutibas_limenis, x
     while True:
         grutibas_limenis = input("Izvēlieties grūtības līmeni no 1-3 (1 ir visvieglākais, 3 - visgrūtākais): ")
         time.sleep(0.5)
@@ -15,6 +15,4 @@ def limena_izvele(): #pieprasa lietotājam grūtības līmeni
         except ValueError:
             print("Ievadītā vērtība nav skaitlis, mēģiniet vēlreiz")
             time.sleep(0.5)
-
-    global x, y
-    x, y = grutibas_limenis + 2, grutibas_limenis + 2
+    x = grutibas_limenis + 2
