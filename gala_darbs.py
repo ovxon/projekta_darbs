@@ -56,7 +56,7 @@ def main_darbiba(): #izpilda visas funkcijas pareizā secībā
         f.write("\n")
         f.close()
         while True:
-            rezultatu_izvele = input("Vai vēlaties redzēt visus iepriekšējos rezultātus? (Ievadiet 0 - ja jā, un 1 - ja nē) )")
+            rezultatu_izvele = input("Vai vēlaties redzēt visus iepriekšējos rezultātus? (Ievadiet 0 - ja jā, un 1 - ja nē)")
             try:
                 rezultatu_izvele = int(rezultatu_izvele)
                 if rezultatu_izvele == 0:
