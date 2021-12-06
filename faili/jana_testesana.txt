@@ -1,1 +1,2 @@
-01.12.2021 Pirmā testēšana. Lielas nepilnības nesaskatu. Viss strādā. Apsveicami!
+01.12.2021 Pirmā testēšana - Lielas nepilnības nesaskatu. Viss strādā. Apsveicami!
+Otrā testēšana - Vajadzētu detalizētāku noteikumu aprakstu un vieglāku datu ievadi.
