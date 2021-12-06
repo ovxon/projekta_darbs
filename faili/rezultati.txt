@@ -1,0 +1,3 @@
+{'Vārds': '2', 'Grūtības līmenis': 1, 'Punkti': 3, 'Minējumi': 7}
+{'Vārds': 'Daniels', 'Grūtības līmenis': 1, 'Punkti': 3, 'Minējumi': 7}
+{'Vārds': 'Daniels', 'Grūtības līmenis': 1, 'Punkti': 3, 'Minējumi': 6}
