@@ -2,9 +2,26 @@ import time
 import moduli as mod
 import os
 import sys
+import subprocess
 
 merku_skaits, minejumu_skaits, punkti, vards, izvele, faila_izmers = 0, 0, 0, 0, 0, 0
 mape = "faili/"
+
+reqs = subprocess.check_output([sys.executable, '-m', 'pip', 'freeze'])
+installed_packages = [r.decode().split('==')[0] for r in reqs.split()]
+
+if "tk" in installed_packages:
+    print("Tkinter is installed")
+else:
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'tk'])
+
+import tkinter
+
+logs = tkinter.Tk()
+
+
+
+logs.mainloop()
 
 def main_darbiba(): #izpilda visas funkcijas pareizā secībā
     while True:
