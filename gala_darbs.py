@@ -1,13 +1,14 @@
 import random
 import time
 import moduli as mod
+import os
 
-merku_skaits, minejumu_skaits, punkti, vards, izvele = 0, 0, 0, 0, 0
+merku_skaits, minejumu_skaits, punkti, vards, izvele, faila_izmers = 0, 0, 0, 0, 0, 0
 mape = "faili/"
 
 def main_darbiba(): #izpilda visas funkcijas pareizā secībā
     while True:
-        global minejumu_skaits, punkti, izvele, vards, mape, minejumu_skaits, rezultatu_izvele, rezultatu_saraksts
+        global minejumu_skaits, punkti, izvele, vards, mape, minejumu_skaits, rezultatu_izvele, rezultatu_saraksts, faila_izmers
         minejumu_skaits, punkti = 0, 0
         while True:
             izvele = input("Vai vēlaties sākt jaunu spēli? Ja jā - ievadiet 0, ja nē - ievadiet 1: ")
@@ -60,9 +61,13 @@ def main_darbiba(): #izpilda visas funkcijas pareizā secībā
             try:
                 rezultatu_izvele = int(rezultatu_izvele)
                 if rezultatu_izvele == 0:
-                    print("Visi rezultāti:")
                     l = open(mape + "rezultati.txt", "r")
-                    print(l.read())
+                    faila_izmers = os.path.getsize("rezultati.txt")
+                    if faila_izmers == 0:
+                        print("Diemžēl, vēl nav saglabāts neviens rezultāts :(")
+                    else:
+                        print("Visi rezultāti:")
+                        print(l.read())
                     break
                 elif izvele == 1:
                     break
