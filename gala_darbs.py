@@ -2,26 +2,13 @@ import random
 import time
 import moduli as mod
 
-rezultats = []
-merku_skaits = 0
-minejumu_skaits = 0
-punkti = 0
-vards = 0
-izvele = 0
+merku_skaits, minejumu_skaits, punkti, vards, izvele = 0, 0, 0, 0, 0
 mape = "faili/"
 
 def main_darbiba(): #izpilda visas funkcijas pareizā secībā
     while True:
-        global minejumu_skaits
-        global punkti
-        global izvele
-        global vards
-        global rezultats
-        global mape
-        global rezultatu_izvele
-        minejumu_skaits = 0
-        punkti = 0
-        rezultats = []
+        global minejumu_skaits, punkti, izvele, vards, mape, minejumu_skaits, rezultatu_izvele, rezultatu_saraksts
+        minejumu_skaits, punkti = 0, 0
         while True:
             izvele = input("Vai vēlaties sākt jaunu spēli? Ja jā - ievadiet 0, ja nē - ievadiet 1: ")
             time.sleep(0.5)
@@ -57,10 +44,15 @@ def main_darbiba(): #izpilda visas funkcijas pareizā secībā
                 mod.laukuma_izvade()
                 break
         vards = str(input("Kāds ir jūsu vārds? "))
-        rezultats = [vards, mod.grutibas_limenis, punkti, minejumu_skaits]
+        rezultatu_saraksts = {
+            "Vārds": vards,
+            "Grūtības līmenis": mod.grutibas_limenis,
+            "Punkti": punkti,
+            "Minējumi": minejumu_skaits
+        }
         print(f"Vārds: {vards}, grūtības līmenis: {mod.grutibas_limenis}, {chr(112) + chr(117) + chr(110) + chr(107) + chr(116) + chr(105)}: {punkti}, minējumu skaits: {minejumu_skaits}")
         f = open(mape + "rezultati.txt", "a")
-        f.write(str(rezultats))
+        f.write(str(rezultatu_saraksts))
         f.write("\n")
         f.close()
         while True:
