@@ -1,2 +1,4 @@
 01.12.2021 Pirmā testēšana - Lielas nepilnības nesaskatu. Viss strādā. Apsveicami!
-Otrā testēšana - Vajadzētu detalizētāku noteikumu aprakstu un vieglāku datu ievadi.
+05.12.2021 Otrā testēšana - Vajadzētu detalizētāku noteikumu aprakstu un vieglāku datu ievadi.
+08.12.2021 Trešā testēšana - Ieteiktu spēli modificēt tā, lai x un y koordinātu vietā ierakstot kādu simbolu piem. "x" spēle automātiski beigtos un būtu iespēja atkārtoti spēlēt 
+spēli.
