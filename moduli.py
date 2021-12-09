@@ -55,12 +55,12 @@ def minesana(): #pieprasa lietotājam x un y vērtības minējumus
             if minejums_x in range(0, x):
                 break
             elif minejums_x > x: 
-                print("Ievadīta pārāk liela vērtība, mēģiniet vēlreiz")
+                print("Ievadīta pārāk liela vērtība, atceries, ka koordinātas var būt tikai veseli skaitļi, kuri ir vienādi/lielāki par 0. Lūdzu mēģiniet vēlreiz!")
             elif minejums_x < 0:
-                print("Ievadīta pārāk maza vērtība, mēģiniet vēlreiz")
+                print("Ievadīta pārāk maza vērtība, atceries, ka koordinātas var būt tikai veseli skaitļi, kuri ir vienādi/lielāki par 0. Lūdzu mēģiniet vēlreiz!")
                 time.sleep(0.5)
         except ValueError:
-            print("Ievadītā vērtība nav skaitlis, mēģiniet vēlreiz")
+            print("Ievadītā vērtība nav skaitlis, atceries, ka koordinātas var būt tikai veseli skaitļi, kuri ir vienādi/lielāki par 0. Lūdzu mēģiniet vēlreiz!")
             time.sleep(0.5)
     while True:
         minejums_y = input(f"Miniet punkta y koordināti no 0 līdz {y-1}: ")
@@ -70,12 +70,12 @@ def minesana(): #pieprasa lietotājam x un y vērtības minējumus
             if minejums_y in range(0, y):
                 break
             elif minejums_y > y: 
-                print("Ievadīta pārāk liela vērtība, mēģiniet vēlreiz")
+                print("Ievadīta pārāk liela vērtība, atceries, ka koordinātas var būt tikai veseli skaitļi, kuri ir vienādi/lielāki par 0. Lūdzu mēģiniet vēlreiz!")
             elif minejums_y < 0:
-                print("Ievadīta pārāk maza vērtība, mēģiniet vēlreiz")
+                print("Ievadīta pārāk maza vērtība, atceries, ka koordinātas var būt tikai veseli skaitļi, kuri ir vienādi/lielāki par 0. Lūdzu mēģiniet vēlreiz!")
                 time.sleep(0.5)
         except ValueError:
-            print("Ievadītā vērtība nav skaitlis, mēģiniet vēlreiz")
+            print("Ievadītā vērtība nav skaitlis, atceries, ka koordinātas var būt tikai veseli skaitļi, kuri ir vienādi/lielāki par 0. Lūdzu mēģiniet vēlreiz!")
             time.sleep(0.5)
         
 def parbaude():
