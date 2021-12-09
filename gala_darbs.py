@@ -8,7 +8,7 @@ mape = "faili/"
 noteikumi = {"Sveicināti minēšanas spēlē! Šajā spēlē ir jāmin x un y koordinātas nejauši izvēlētiem punktiem 2D plaknē. Koordinātas var būt tikai veseli skaitļi, kuri ir vienādi/lielāki par 0"}
 
 def main_darbiba(): #izpilda visas funkcijas pareizā secībā
-    print(list(noteikumi))
+    print(" ".join(noteikumi))
     while True:
         global minejumu_skaits, punkti, izvele, vards, mape, minejumu_skaits, rezultatu_izvele, rezultatu_saraksts, faila_izmers
         minejumu_skaits, punkti = 0, 0
