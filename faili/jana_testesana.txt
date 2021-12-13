@@ -3,3 +3,4 @@
 08.12.2021 Trešā testēšana - Ieteiktu spēli modificēt tā, lai x un y koordinātu vietā ierakstot kādu simbolu piem. "x" spēle automātiski beigtos un būtu iespēja atkārtoti spēlēt 
 spēli.
 08.12.2021 Ceturtā testēšana - Ieteiktu spēles beigās izvadīt laiku, kas parāda cik ilgi esiet spēlējis spēli. 
+09.12.2021. Piektā testēšana - Izvadīt punktus kādā interesantā veidā (emoji, krāsas...)
